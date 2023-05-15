@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:light-grey;">
+<head>
+<title>Michael's HTML Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="montserrat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bebas.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+body, html {
+  height: 100%;
+  color: #1E1E1E;
+  line-height: 1.8;
+  scroll-behavior: smooth;	
+}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* First Image */
+.bgimg-1 {
+  filter: grayscale(100%) brightness(70%);
+  background-image: url('droneshot.jpeg');
+  min-height: 100%;
+}
+/* Second Image */
+.bgimg-2 {
+  filter: grayscale(100%) brightness(70%);
+  background-image: url("teamwork.jpg");
+  min-height: 400px;
+}
+/* Third Image */
+.bgimg-3 {
+  filter: grayscale(100%) brightness(70%);
+  background-image: url("dev.jpg");
+  min-height: 400px;
+}
+
+.w3-hover-opacity {cursor: pointer;}
+
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="w3-top">
+<!-- First Parallax Image with Text -->
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><p style="color:white">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"></i> CONTACT</a>
+    </a>
+    
+  <!-- Navigation Bar on Smaller Devices -->
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+    <h1 style="font-size:8vw"><p style="color:white">BLACKGATE</span> STUDIOS</span></p>
+    
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"><p style="font-size:30px"><b>ABOUT US</b><p></h3>
+    <p style="font-size:18px">Founded in 2022, the minds of Adriel Hunter and Michael Milano wanted to challenge what a cross-media company is.</p>
+  </center><div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-small">
+      <img src="suit.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Adriel Hunter" width="400" height="200">
+    
+    </div>
+    <!-- Hides this text on smaller devices. -->
+    <div class="w3-col m6 w3-padding-large">
+        <p style="font-size:18px"> In creating products for a multitude of different mediums, our fans are our top priority. We believe that creating relationships with our community can result in some terrific bonds, inspire us to create, and help us further push our creativity to new heights. We strive to create a relaxed yet diligent studio environment with an amazing workflow. We employ and aim to hire the best in the business. Our independent studio are looking for passionate game creators to join our accomplished team and make our visions a reality.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16"><b>PERFORMANCE</b></p>
+  <p style="font-size:20px"></i>Turnover Rate</p>
+  <div class="w3">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:5%">5%</div>
+  </div>
+  <p style="font-size:20px"></i> Efficiency with projects</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+  <p style="font-size:20px"></i> Number of employees</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:30%">30</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxlarge">12+</span><br>
+    Investors
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxlarge">8</span><br>
+    Video Games
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxlarge">30</span><br>
+    Employees
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxlarge">10+</span><br>
+    Franchise
+  </div>
+</div>
+
+<!-- Parallax Image with Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxxlarge w3-text-white w3-wide"><p style="font-size:9vw">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <p class="w3-center"><p style="font-size:20px">Here are some of our latest output - liased with countless of talented people and developers.<br><center></p>
+  <p style="font-size:20px"><i>Click on the images to enlarge.</i></center></p><br>
+
+<!-- Grid for rows of images --> 
+ <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="ds2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="ds2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="re4.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="fear.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="condemned.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Condemned: Criminal Origins">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="tew.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="tew2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="bioshock2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <button class="w3-button w3-dark-grey" style="margin-top:64px"><p style="color:white">load more...</button>
+  </div>
+</div>
+<!-- Modal For Images on click-->
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"><h1 style="font-size:9vw">CONTACT</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center" "font-size:50px"><b>Inquiries</b></h3>
+  <p class="w3-center"><p style="font-size:20px">We want to liased a community that will assist us to make our product better and as a studio moving forward. 
+We would love to hear your thoughts below.</p>
+
+<!-- Third Parallax Image with Portfolio Text -->
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    </div>
+    <div class="w3-col m8 w3-panel">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black  w3-xlarge w3-center"></i><b> Ohio, US</b><br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-center"></i><b> Phone: +00 42069</b><br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-center"></i><b> Email: blackgatestudios@mail.com</b><br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-dark-grey w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back on the top</a>
+  <div class="w3-xxlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>    
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+    <p style="font-size:20px">© 2023 Blackgate Studios Publishing, Inc. Blackgate Studios is a registered trademark of Blackgate Publishing, Inc. All rights reserved.</a></p>
+</footer>
+ 
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change the style of Navigation Bar while scrolling
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+    }
+}
+
+// Toggle the menu on smaller devices when tapping the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
